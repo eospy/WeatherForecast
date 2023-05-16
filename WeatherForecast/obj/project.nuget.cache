@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wNYibyIwl2VWzwWzI/Vicx1P2AKp6Yh5/2VN1cUee9k1XY+17lfMuI0zzcGtIbZT+3zy1KHBwr/UXbDxWq3jjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Эмиль\\source\\repos\\WeatherForecast\\WeatherForecast\\WeatherForecast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Эмиль\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Эмиль\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Эмиль\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Эмиль\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

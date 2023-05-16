@@ -1,0 +1,15 @@
+﻿<Application x:Class="WeatherForecast.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WeatherForecast"
+             StartupUri="./MVVM/View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/SearchBoxTheme.xaml"/>
+                <ResourceDictionary Source="Theme/SearchResultsTheme.xaml"/>
+                <ResourceDictionary Source="Theme/TextStyleTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

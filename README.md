@@ -18,9 +18,17 @@ SELECT COUNT(*) FROM Sells WHERE Date='2021-06-20'
 
 **3. Вывести среднюю сумму продажи с товаром 'Фанера';**
 SELECT AVG(Sum) AS Average_Sum 
+
+
 FROM Sells as s
+
+
 JOIN Products as p
+
+
 ON s.ID_Product=p.ID
+
+
 WHERE p.Name='Фанера'
 
 

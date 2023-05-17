@@ -34,47 +34,99 @@ WHERE p.Name='Фанера'
 
 **4. Вывести фамилии менеджеров и общую сумму продаж для
 каждого с товаром 'ОСБ'**
+
+
 select m.Fio,SUM(Sum) as 'Sum'
+
+
 from Sells s
+
+
 left join Managers m
+
+
 ON m.ID=s.ID_Manager
+
+
 left join Products p
+
+
 on p.ID=s.ID_Product
+
+
 where p.Name='ОСБ'
+
+
 group by ID_Manager,m.Fio
 
 
 **5. Вывести менеджера и товар, который продали 22 августа 2021**
 SELECT p.Name AS Product_name,
+
+
 m.Fio as Manager_name
+
+
 FROM Sells as s
+
+
 JOIN Products as p
+
+
 ON s.ID_Product=p.ID
+
+
 JOIN Managers as m
+
+
 ON s.ID_Manager=m.ID
+
+
 WHERE s.Date='2021-08-22'
 
 
 **6. Вывести все товары, у которых в названии имеется 'Фанера' и
 цена не ниже 1750**
 select * 
+
+
 from Products p
+
+
 where p.Name like '%Фанера%'
+
+
 and p.Cost>1750
 
 
 **7. Вывести историю продаж товаров, группируя по месяцу продажи
 и наименованию товара**
 select p.Name,MONTH(s.Date)
+
+
 from Sells s
+
+
 join Products p
+
+
 ON p.ID=s.ID_Product
+
+
 group by MONTH(s.Date),p.Name
 
 
 **8. Вывести количество повторяющихся значений и сами значения**
 из таблицы 'Товары', где количество повторений больше 1.
+
+
 select Name,count(*)
+
+
 from Products
+
+
 group by Name
+
+
 having count(*)>1
